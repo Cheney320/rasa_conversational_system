@@ -1,0 +1,6 @@
+version: "2.0"
+stories:
+- story: games path
+  steps:
+  - intent: games
+  - action: utter_games

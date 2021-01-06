@@ -1,0 +1,99 @@
+version: "2.0"
+
+nlu:
+- intent: play_music
+  examples: |
+    - 我想听歌
+    - 播一首音乐来听听
+    - 播放音乐
+    - 小黄同学，我想听音乐
+    - 小黄同学，我想听歌
+    - 小黄同学，放音乐来听听
+
+- intent: play_music_with_name   # 播放具体的一首歌
+  examples: |
+    - 我想听[喜欢你](song)
+    - 播放[丑八怪](song)
+    - 小黄同学，播放一首[演员](song)
+    - [丑八怪](song)
+
+- intent: play_music_with_singer   # 播放某位歌手的歌
+  examples: |
+    - 我想听[薛之谦](singer)的歌
+    - 播放[陈奕迅](singer)的歌
+    - 小黄同学，播放一首[邓紫棋](singer)的歌
+    - [薛之谦](singer)的歌
+
+- intent: play_music_with_singer_and_song  # 播放某位歌手的某首歌
+  examples: |
+    - 我想听[陈奕迅](singer)的[好久不见](song)
+    - 听听[梁博](singer)的[想念](song)
+    - 播放[薛之谦](singer)的[丑八怪](song)
+    - [薛之谦](singer)的[丑八怪](song)
+
+- intent: stop_music
+  examples: |
+    - 暂停播放
+    - 不想听这首歌了
+    - 这首歌不好听
+    - 换别的歌吧
+    - 停
+    - stop
+
+- intent: loop_music
+  examples: |
+    - 循环播放这首歌
+    - 循环播放[海阔天空](song)
+    - 我想再听一遍这首歌
+
+- intent: next_music
+  examples: |
+    - 播放下一首歌曲
+    - 小黄同学，播放下一首歌
+    - 小黄同学，我要听下一首歌曲
+    - 放下一首歌
+    - 播放下一首歌
+    - 下一首歌
+    - 我要听下一首歌
+
+- intent: last_music
+  examples: |
+    - 播放上一首歌曲
+    - 小黄同学，播放上一首歌
+    - 小黄同学，我要听上一首歌
+    - 播放上一首歌
+    - 放上一首歌
+    - 上一首歌
+    - 我要听上一首歌
+
+- lookup: singer
+  examples: |
+    - 陈奕迅
+    - 薛之谦
+    - 华晨宇
+    - 张信哲
+    - 周杰伦
+    - 林俊杰
+    - 张杰
+    - 张学友
+    - 刘德华
+    - 李荣浩
+    - 邓紫棋
+    - 蔡依林
+    - 韩红
+- lookup: song
+  examples: |
+    - 好久不见
+    - 十年
+    - 爱情转移
+    - 丑八怪
+    - 刚刚好
+    - 晴天
+    - 回到过去
+    - 七里香
+    - 彩虹
+    - 稻香
+    - 曹操
+    - 小酒窝
+
+

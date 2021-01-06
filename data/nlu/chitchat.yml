@@ -1,0 +1,72 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - 小黄同学
+    - 在吗
+    - hello
+    - 早上好
+    - 中午好
+    - 晚上好
+
+- intent: goodbye
+  examples: |
+    - 拜拜
+    - goodby
+    - 886
+    - 88
+    - 关机
+    - 小黄同学，关机
+    - 再见，小黄同学
+
+
+- intent: happy
+  examples: |
+    - 我今天好开心呀
+    - 我很快乐
+    - 我真开心
+    - 太棒了
+    - 啦啦啦
+    - 哈哈
+    - 嘻嘻
+    - 嘿嘿
+
+- intent: say_happy_events  # 叙述开心的事情
+  examples: |
+    - 我今天被老师表扬了
+    - 今天考试考了100分
+    - 今天天气真好
+
+- intent: sad
+  examples: |
+    - 我好难过
+    - 不开心
+    - 嘤嘤嘤
+    - 今天真是糟糕透了
+    - 我最近真倒霉
+    - 气死我了
+    - 啊啊啊啊， 我好烦啊
+    - 不想说话
+
+- intent: say_sad_events  # 叙述伤心的事情
+  examples: |
+    - 今天我不小心摔了一跤
+    - 今天我被老师批评了
+    - 我的钱包丢了
+
+- intent: boring
+  examples: |
+    - 我好无聊呀
+    - 快陪我聊天
+    - 不知道干点啥
+    - 真无聊，想做点有意思的事情
+
+- intent: ask_function
+  examples: |
+    - 小黄同学，你有哪些功能
+    - 你能干些啥
+    - 你支持哪些功能
+    - 你能干什么
+    - 你能做什么
+    - 你有什么功能

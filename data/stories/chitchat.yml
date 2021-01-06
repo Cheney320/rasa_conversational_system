@@ -1,0 +1,44 @@
+version: "2.0"
+stories:
+- story: greet path   # 打招呼
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: ask function path  # 问功能
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_function
+  - action: utter_reply_function
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: happy
+  - action: utter_happy
+  - intent: say_happy_events
+  - action: utter_reply_happy
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: sad
+  - action: utter_sad
+  - intent: say_sad_events
+  - action: utter_reply_sad
+
+- story: boring path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: boring
+  - action: utter_boring
+
+- story: goodbye path
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+

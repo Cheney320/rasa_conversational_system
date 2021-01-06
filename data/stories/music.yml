@@ -1,0 +1,36 @@
+version: "2.0"
+stories:
+- story: play music path 1  # 只表达了要播放音乐，而没有说播放具体哪首歌
+  steps:
+  - intent: play_music
+  - action: utter_play_music
+- story: play music path 2  # 说了具体播放哪首歌
+  steps:
+  - intent: play_music_with_name
+  - action: utter_play_music_with_name
+- story: play music path 3  # 说了播放谁的歌
+  steps:
+  - intent: play_music_with_singer
+  - action: utter_play_music_with_singer
+  - intent: play_music_with_singer_and_song
+  - action: utter_play_music_with_singer_and_song
+- story: play music path 4  # 说了具体的歌手和具体的歌
+  steps:
+  - intent: play_music_with_singer_and_song
+  - action: utter_play_music_with_singer_and_song
+- story: stop music path
+  steps:
+  - intent: stop_music
+  - action: utter_stop_music
+- story: loop music path
+  steps:
+  - intent: loop_music
+  - action: utter_loop_music
+- story: next music path
+  steps:
+  - intent: next_music
+  - action: utter_next_music
+- story: last music path
+  steps:
+  - intent: last_music
+  - action: utter_last_music

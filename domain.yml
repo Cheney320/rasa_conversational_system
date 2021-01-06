@@ -1,0 +1,89 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- happy
+- sad
+- boring
+- ask_function
+- play_music
+- play_music_with_name
+- play_music_with_singer
+- play_music_with_singer_and_song
+- stop_music
+- loop_music
+- next_music
+- last_music
+- games
+- say_happy_events
+- say_sad_events
+entities:
+- singer
+- song
+slots:
+  singer:
+    type: unfeaturized
+    influence_conversation: false
+  song:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: hello，我在
+  - text: 主人，我在
+  utter_goodbye:
+  - text: 拜拜，主人，有事记得叫我哦！
+  utter_happy:
+  - text: 什么事呀？这么开心！
+  - text: 主人捡着钱包了吗，这么开心，哈哈哈！
+  utter_reply_happy:
+  - text: 你真棒！我真替你感到开心！
+  - text: 主人太棒了！
+  utter_sad:
+  - text: 怎么了，发生啥事了呀？
+  - text: 主人，有什么不开的可以和我说哟！
+  utter_reply_sad:
+  - text: 小可怜！我替你感到难过
+  - text: 摸摸头，下次注意点哟
+  utter_boring:
+  - text: 主人，让我来陪你聊天嘛！
+  - text: 主人，看你这么无聊，要不我们来玩游戏吧！
+  utter_reply_function:
+  - text: 主人，小黄同学目前支持陪聊、玩游戏和播放音乐的功能哦
+  utter_play_music:
+  - text: 主人想听什么歌呢
+  utter_play_music_with_name:
+  - text: 即将播放的是{song}
+  utter_play_music_with_singer:
+  - text: 主人想听{singer}的哪首歌
+  utter_play_music_with_singer_and_song:
+  - text: 即将给主人播放{singer}的{song}
+  utter_stop_music:
+  - text: 已停止播放音乐，主人不想听音乐了吗
+  utter_loop_music:
+  - text: 已经为你循环播放{singer}的{song}
+  utter_next_music:
+  - text: 播放下一首{singer}的{song}
+  utter_last_music:
+  - text: 播放上一首{singer}的{song}
+  utter_games:
+  - text: 那我们来玩脑筋急转弯吧
+actions:
+- utter_greet
+- utter_goodbye
+- utter_happy
+- utter_reply_happy
+- utter_sad
+- utter_reply_sad
+- utter_boring
+- utter_reply_functions
+- utter_play_music
+- utter_play_music_with_name
+- utter_play_music_with_singer
+- utter_play_music_with_singer_and_song
+- utter_stop_music
+- utter_loop_music
+- utter_next_music
+- utter_last_music
