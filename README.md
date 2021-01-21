@@ -10,9 +10,7 @@
     - 游戏功能
 
 ## 进度
-- 目前简单实现了闲聊功能和音乐播放功能，效果如下图所示：
-  目前实现了如下功能：
-
+  目前实现了如下功能，并附上效果图：
 - 闲聊
   ![image-20210107012840337](https://tva1.sinaimg.cn/large/008eGmZEgy1gmehnm7c3lj310o0qomzl.jpg)
   ![image-20210107012954558](https://tva1.sinaimg.cn/large/008eGmZEgy1gmehoufg64j30vm0u077a.jpg)
