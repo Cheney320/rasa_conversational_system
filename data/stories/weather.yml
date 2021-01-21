@@ -1,0 +1,36 @@
+version: "2.0"
+stories:
+- story: weather path 1
+  steps:
+    - intent: request_weather
+    - action: action_ask_slot
+    - action: weather_form
+    - active_loop: weather_form
+    - active_loop: null
+
+- story: weather path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: request_weather
+    - action: action_ask_slot
+    - action: weather_form
+    - active_loop: weather_form
+    - active_loop: null
+
+- story: weather path 3
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_function
+    - action: utter_reply_function
+    - intent: request_weather
+    - action: action_ask_slot
+    - action: weather_form
+    - active_loop: weather_form
+    - active_loop: null
+
+
+
+
+

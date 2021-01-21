@@ -19,15 +19,27 @@ intents:
 - games
 - say_happy_events
 - say_sad_events
+- request_weather
+- inform
 entities:
 - singer
 - song
+- address
+- date_time
 slots:
   singer:
     type: unfeaturized
     influence_conversation: false
   song:
     type: unfeaturized
+    influence_conversation: false
+  date_time:
+    type: unfeaturized
+    auto_fill: false
+    influence_conversation: false
+  address:
+    type: unfeaturized
+    auto_fill: false
     influence_conversation: false
 responses:
   utter_greet:
@@ -51,7 +63,7 @@ responses:
   - text: 主人，让我来陪你聊天嘛！
   - text: 主人，看你这么无聊，要不我们来玩游戏吧！
   utter_reply_function:
-  - text: 主人，小黄同学目前支持陪聊、玩游戏和播放音乐的功能哦
+  - text: 主人，小黄同学目前支持陪聊、查询天气、玩游戏、播放音乐和知识问答的功能哦！
   utter_play_music:
   - text: 主人想听什么歌呢
   utter_play_music_with_name:
@@ -87,3 +99,7 @@ actions:
 - utter_loop_music
 - utter_next_music
 - utter_last_music
+- weather_form
+- action_ask_slot
+forms:
+  weather_form: {}
